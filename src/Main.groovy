@@ -7,5 +7,7 @@ static void main(String[] args) {
   inventoryApp.addProduct("Banana", 30)
   inventoryApp.displayInventory()
 
-
+  // Adjusting stock quantity
+  inventoryApp.adjustStock("Apple", -10)
+  inventoryApp.displayInventory()
 }

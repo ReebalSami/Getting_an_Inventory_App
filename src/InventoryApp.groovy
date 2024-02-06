@@ -24,4 +24,14 @@ class InventoryApp {
         }
     }
 
+    // Feature 3: Adjust stock quantity
+    def adjustStock(String name, int quantity) {
+        if (inventory.containsKey(name)) {
+            inventory[name] += quantity
+            println("Stock quantity for $name adjusted by $quantity.")
+        } else {
+            println("Product $name not found in the inventory.")
+        }
+
+    }
 }
